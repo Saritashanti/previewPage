@@ -105,10 +105,10 @@ body{
     {
         height: auto;
     }
-    .container .imgBox
-    {
-        padding: 40px;
-    }
+}
+.container
+{
+    color: black;
 }
 
 
