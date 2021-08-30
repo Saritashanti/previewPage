@@ -9,7 +9,7 @@ body{
     min-height: 100vh;
     font-family: 'Poppins',sans-serif;
     background: #070c24;
-}
+} 
 .container
 {
     position: relative;
@@ -19,9 +19,9 @@ body{
     width: 900px;
     height: 600px;
     background: #fff;
-    margin: 20PX;
+    /* margin: 20PX; */
 }
-.container .imgBox 
+.container .imgbx 
 {
     position: relative;
     display: flex;
@@ -31,7 +31,7 @@ body{
     height: 100%;
     background: #006dbc;
 }
-.container .imgBox img
+.container .imgbx img
 {   
     position: relative;
     width: 700px;
@@ -81,6 +81,7 @@ body{
     color: #fff;
     border: none;
     box-shadow: none;
+    outline: none;
     padding: 15px 20px;
     margin-top: 5px;
     font-size: 16px;
@@ -89,8 +90,10 @@ body{
     font-weight: 600;
     border-radius: 40px;
     float: right;
+    cursor: pointer;
 }
-.container .imgBox::before{
+.container .imgbx:before
+{
     content: 'Nike';
     position: absolute;
     top: 20px;
@@ -105,10 +108,33 @@ body{
     {
         height: auto;
     }
-}
-.container
-{
-    color: black;
+    
+    .container .imgbx
+    {
+        padding: 40PX;
+        box-sizing: border-box;
+        width: 100%  !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .container .imgbx img
+    {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+    .details
+    {
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+    .container .details p
+    {
+            max-width: 100%;
+            margin-left: 0;
+    }
 }
 
 
